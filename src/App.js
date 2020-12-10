@@ -1,6 +1,7 @@
 import React from 'react';
-import List from './components/List.js'
-
+import List from './components/List.js';
+import Filter from './components/Filter.js';
+import './stylesheet.scss';
 
 class App extends React.Component {
   constructor(props){
@@ -14,23 +15,15 @@ class App extends React.Component {
     fetch('https://api.spacexdata.com/v3/launches')
     .then(res => res.json())
     .then(data => this.setState({data: data}))
-
   }
 
   render(){
     console.log(this.state.data)
-
     return(
       <div>
       <h1>welcome</h1>
-      <List launches={this.state.data}/>
-      <ul>
-      {this.state.data.map(data => (
-        <li key={data.id}>
-        {data.mission_name}
-        </li>
-      ))}
-      </ul>
+      <Filter year={this.state.data} />
+      <List data={this.state.data}/>
       </div>
     );
   }

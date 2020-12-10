@@ -6,7 +6,9 @@ class List extends React.Component {
   render(){
     return(
       <div>
-      <ListItem launches={this.props.launches}/>
+      <ul>
+      <ListItem launches={this.props.data}/>
+      </ul>
       </div>
     )
   }
