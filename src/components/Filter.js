@@ -1,18 +1,20 @@
 import React from 'react';
-import {filterYear} from './../helpers/helpers.js';
 
 
 class Filter extends React.Component {
+  constructor(props){
+    super(props)
+  }
 
 
+  //pass year down as props to list as selectedYear
   render(){
-      const uniqueYear = filterYear(this.props.year)
     return(
       <div>
-      <select>
-      <option>Filter by year</option>
-      {uniqueYear.map(year => (
-        <option key={year.id}value={year.launch_year}>
+      <select onChange={this.props.handleChangeYear} className="filterYear">
+      <option value='' >Filter by year</option>
+      {this.props.years.map(year => (
+        <option key={year.id} value={year.launch_year}>
         {year}
         </option>
       ))}
