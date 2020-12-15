@@ -15,7 +15,7 @@ class SortButton extends React.Component{
 
 
     return(
-      <button onClick={this.props.handleChangeOrder}>{this.nameChange()}</button>
+      <button className="sort" onClick={this.props.handleChangeOrder}>{this.nameChange()}</button>
     )
   }
 

@@ -46,3 +46,196 @@ $font-family: 'Brandon Grotesque', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
+//buttons
+
+.reloadButton{
+  background-color: $primary-blue;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border:none;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  margin:0;
+  font-family: $font-family;
+  color: white;
+  font-weight: bold;
+  background-image: url("./assets/icon/refresh.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  width:6rem;
+  height:2rem;
+}
+
+
+
+.sort{
+  background-image: url("./assets/icon/sort.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  resize: both;
+  justify-content: center;
+  display: block;
+  padding-left: 2rem;
+  width:8rem;
+  height:2rem;
+  background-color: $primary-blue;
+  border:none;
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  margin:0;
+  padding:0;
+  font-family: $font-family;
+  color: white;
+  font-weight: bold;
+}
+
+.filterYear{
+  position:relative;
+  width:8rem;
+  height:2rem;
+  background-color: $primary-blue;
+  color: white;
+  border:none;
+  font-size: .7rem;
+margin-right:0.5rem;
+font-weight: bold;
+
+}
+
+//navbar
+.navbar{
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1vh;
+  width: 100vw;
+  height:4vh;
+
+}
+.reloadButtonContainer{
+  width:100vw;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.logoWrapper{
+  padding: 0;
+  justify-content: left;
+  display: inline-flex;
+  align-items: center;
+  width:50rem;
+  align-items: baseline;
+}
+.navbarText{
+  padding-left: 0;
+  margin-left: 0;
+  font-family: $font-family;
+  color: $font-color;
+}
+.navbarLogo{
+  padding-right: 0;
+  margin-right: 0;
+  width:15rem;
+}
+
+//main
+.mainWrapper{
+  display: inline-flex;
+  height: 60vh;
+  width: 99vw;
+
+}
+
+.BackgroundWrapper{
+  width: 40vw;
+  height:50vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.launchImg{
+  width: 30vw;
+  height: 45vh;
+}
+.listWrapper{
+  width:45vw;
+  overflow: scroll;
+
+}
+
+//buttons
+.buttonWrapper{
+  width: 83vw;
+  display: inline-flex;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+//item
+.listItemWrapper{
+  display: block;
+  width: 50vw;
+  height: 80vh;
+
+}
+
+.listItem{
+  box-shadow: 2px 2px 6px grey;
+  border-radius: 8px;
+  margin: 2px;
+  width:40vw;
+  height: 6vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.divder{
+  align-items:center;
+  display: inline-flex;
+
+
+}
+.number{
+  width: 3vw;
+  height: 8vh;
+  font-family:$font-family;
+  text-align: right;
+  color: $font-color;
+
+}
+.title{
+  width: 20vw;
+  height: 8vh;
+  color: $font-color;
+  font-family:$font-family;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.infoWrapper{
+  width: 90vw;
+  height: 7vh;
+  text-align: center;
+  display: block;
+}
+.date{
+  width: 12vw;
+  height: 0.5vh;
+  font-size: .60em;
+  font-family:$font-family;
+  text-align: right;
+  color: $font-color;
+
+}
+.rocket{
+  width: 13vw;
+  height: 0.80vh;
+  color: $font-color;
+  font-size: 0.90em;
+  font-family:$font-family;
+  font-weight: bold;
+  text-align: right;
+}

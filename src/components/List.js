@@ -14,11 +14,9 @@ class List extends React.Component {
     }
   console.log(this.props.selectedYear)
     return(
-      <div>
       <ul>
       <ListItem launches={item}/>
       </ul>
-      </div>
     )
   }
 }

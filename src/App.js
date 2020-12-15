@@ -2,9 +2,10 @@ import React from 'react';
 import List from './components/List.js';
 import Filter from './components/Filter.js';
 import SortButton from './components/SortButton.js';
-import ReloadButton from './components/ReloadButton.js';
-import './stylesheet.scss';
+import Navbar from './components/Navbar.js';
+import launch from './assets/img/launch-home@3x.png';
 import {filterYear} from './helpers/helpers.js';
+import './stylesheet.scss';
 
 
 class App extends React.Component {
@@ -47,12 +48,20 @@ class App extends React.Component {
   render(){
     console.log(this.state.data)
     return(
-      <div>
-      <h1>welcome</h1>
-      <ReloadButton reload={this.loadData}/>
-      <Filter years={filterYear(this.state.data)} handleChangeYear={this.handleYearChange} />
-      <SortButton ascending={this.state.ascending} handleChangeOrder={this.handleChangeOrder}/>
-      <List data={this.getData()} selectedYear={this.state.year}/>
+      <div className="app">
+      <Navbar reload={this.loadData}/>
+          <div className="buttonWrapper"> 
+          <Filter years={filterYear(this.state.data)} handleChangeYear={this.handleYearChange}/>
+          <SortButton ascending={this.state.ascending} handleChangeOrder={this.handleChangeOrder}/>
+          </div>
+          <div className="mainWrapper">
+          <div className="BackgroundWrapper">
+          <img className="launchImg" src={launch}/>
+          </div>
+                <div className="listWrapper">
+          <List data={this.getData()} selectedYear={this.state.year}/>
+          </div> 
+          </div>
       </div>
     );
   }

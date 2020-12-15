@@ -9,13 +9,3 @@ export function filterYear(data){
   })
 return years;
 }
-
-
-
-
-// export function getDate(data){
-//
-// const unixTime = data;
-// const date = new Date(unixTime*1000);
-// return (date.toLocaleDateString('en-US'));
-// }
