@@ -13,13 +13,13 @@ class Navbar extends React.Component{
     return(
       <header>
       <div className="navbar">
-        <div className="logoWrapper">
-          <img className="navbarLogo" src={logo}/>
-          <h3 className="navbarText">LAUNCHES</h3>
-        </div>
-          <div className="reloadButtonContainer">
-          <ReloadButton reload={this.props.reload}/>
-          </div>
+      <div className="logoWrapper">
+      <img className="navbarLogo" src={logo}/>
+      <h3 className="navbarText">LAUNCHES</h3>
+      </div>
+      <div className="reloadButtonContainer">
+      <ReloadButton reload={this.props.reload}/>
+      </div>
       </div>
       </header>
     )

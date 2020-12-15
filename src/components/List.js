@@ -12,7 +12,6 @@ class List extends React.Component {
     }else{
       item = launchesToShow
     }
-  console.log(this.props.selectedYear)
     return(
       <ul>
       <ListItem launches={item}/>

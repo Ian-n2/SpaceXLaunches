@@ -46,22 +46,21 @@ class App extends React.Component {
   }
 
   render(){
-    console.log(this.state.data)
     return(
       <div className="app">
       <Navbar reload={this.loadData}/>
-          <div className="buttonWrapper"> 
-          <Filter years={filterYear(this.state.data)} handleChangeYear={this.handleYearChange}/>
-          <SortButton ascending={this.state.ascending} handleChangeOrder={this.handleChangeOrder}/>
-          </div>
-          <div className="mainWrapper">
-          <div className="BackgroundWrapper">
-          <img className="launchImg" src={launch}/>
-          </div>
-                <div className="listWrapper">
-          <List data={this.getData()} selectedYear={this.state.year}/>
-          </div> 
-          </div>
+      <div className="buttonWrapper"> 
+      <Filter years={filterYear(this.state.data)} handleChangeYear={this.handleYearChange}/>
+      <SortButton ascending={this.state.ascending} handleChangeOrder={this.handleChangeOrder}/>
+      </div>
+      <div className="mainWrapper">
+      <div className="BackgroundWrapper">
+      <img className="launchImg" src={launch}/>
+      </div>
+      <div className="listWrapper">
+      <List data={this.getData()} selectedYear={this.state.year}/>
+      </div> 
+      </div>
       </div>
     );
   }
